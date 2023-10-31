@@ -7,6 +7,7 @@ COPY . .
 
 RUN npm run prod
 RUN pwd 
+RUN ls ./dist
 
 FROM nginx:1.18
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
