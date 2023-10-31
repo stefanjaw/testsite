@@ -12,5 +12,5 @@ FROM nginx:1.18
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
-COPY --from=build app/dist/bifa_fe/ /usr/share/nginx/html
+COPY --from=build app/dist/testsite/ /usr/share/nginx/html
 
